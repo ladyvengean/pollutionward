@@ -37,16 +37,16 @@ export function AdminSidebar() {
   };
 
   return (
-    <aside className="w-64 min-h-screen bg-sidebar-background text-sidebar-foreground flex flex-col">
+    <aside className="w-64 min-h-screen bg-primary text-primary-foreground flex flex-col">
       {/* Logo */}
-      <div className="p-6 border-b border-sidebar-border">
+      <div className="p-6 border-b border-primary-foreground/20">
         <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-sidebar-primary text-sidebar-primary-foreground">
+          <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 text-white">
             <Shield className="h-5 w-5" />
           </div>
           <div>
-            <h1 className="font-bold text-lg">Admin Panel</h1>
-            <p className="text-xs text-sidebar-foreground/70">Pollution Control</p>
+            <h1 className="font-bold text-lg text-white">Admin Panel</h1>
+            <p className="text-xs text-white/70">Pollution Control</p>
           </div>
         </div>
       </div>
@@ -58,15 +58,17 @@ export function AdminSidebar() {
             key={item.href}
             to={item.href}
             className={({ isActive }) =>
-              `nav-link ${isActive ? "active" : ""} ${
-                item.disabled ? "opacity-50 pointer-events-none" : ""
-              }`
+              `flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 ${
+                isActive 
+                  ? "bg-white/20 text-white font-medium" 
+                  : "text-white/80 hover:bg-white/10 hover:text-white"
+              } ${item.disabled ? "opacity-50 pointer-events-none" : ""}`
             }
           >
             <item.icon className="h-5 w-5" />
             <span>{item.title}</span>
             {item.disabled && (
-              <span className="ml-auto text-xs bg-sidebar-accent px-2 py-0.5 rounded">
+              <span className="ml-auto text-xs bg-white/20 px-2 py-0.5 rounded">
                 Soon
               </span>
             )}
@@ -75,10 +77,10 @@ export function AdminSidebar() {
       </nav>
 
       {/* Footer */}
-      <div className="p-4 border-t border-sidebar-border">
+      <div className="p-4 border-t border-primary-foreground/20">
         <Button
           variant="ghost"
-          className="w-full justify-start gap-3 text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+          className="w-full justify-start gap-3 text-white/80 hover:bg-white/10 hover:text-white"
           onClick={handleLogout}
         >
           <LogOut className="h-5 w-5" />
