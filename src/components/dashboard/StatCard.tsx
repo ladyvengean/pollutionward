@@ -1,7 +1,8 @@
 import { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { CSSProperties } from "react";
 
-interface StatCardProps {
+export interface StatCardProps {
   title: string;
   value: string | number;
   subtitle?: string;
@@ -12,6 +13,7 @@ interface StatCardProps {
   };
   variant?: "default" | "primary" | "success" | "warning" | "danger";
   className?: string;
+  style?: CSSProperties;
 }
 
 const variantStyles = {
@@ -38,6 +40,7 @@ export function StatCard({
   trend,
   variant = "default",
   className,
+  style,
 }: StatCardProps) {
   return (
     <div
@@ -46,6 +49,7 @@ export function StatCard({
         variantStyles[variant],
         className
       )}
+      style={style}
     >
       <div className="flex items-start justify-between">
         <div className="space-y-1">
