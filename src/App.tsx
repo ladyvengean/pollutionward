@@ -11,6 +11,7 @@ import Analytics from "./pages/Analytics";
 import Alerts from "./pages/Alerts";
 import NotFound from "./pages/NotFound";
 import Map from "./pages/Map";
+import WardMap from "./pages/WardMap";
 
 // Admin imports
 import { AdminFloatingButton } from "./components/admin/AdminFloatingButton";
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/alerts" element={<Alerts />} />
           <Route path="/maps" element={<Map />} />
+          <Route path="/ward-map" element={<WardMap />} />
           
           {/* Admin Routes - Protected */}
           <Route path="/admin" element={<AdminAuthGuard><AdminIndex /></AdminAuthGuard>} />

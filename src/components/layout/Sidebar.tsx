@@ -26,6 +26,7 @@ const navigation = [
   { name: "Citizen Portal", href: "/citizen", icon: Users },
   { name: "Analytics", href: "/analytics", icon: BarChart3 },
   { name: "Alerts", href: "/alerts", icon: Bell },
+  { name: "Heatmap", href: "/ward-map", icon: Map },
 ];
 
 export function Sidebar() {

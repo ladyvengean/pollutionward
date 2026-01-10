@@ -5,6 +5,30 @@
   text-align: center;
 }
 
+.info.legend {
+  background: white;
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.info.legend h4 {
+  margin: 0 0 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.info.legend i {
+  width: 14px;
+  height: 14px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.8;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
