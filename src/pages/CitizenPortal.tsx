@@ -198,11 +198,34 @@ export default function CitizenPortal() {
     <DashboardLayout>
       <div className="space-y-8">
         {/* Header */}
-        <div className="animate-fade-in">
-          <h1 className="text-3xl font-bold">Citizen Engagement Portal</h1>
-          <p className="text-muted-foreground">
-            Report pollution issues and track your complaints
-          </p>
+        <div className="animate-fade-in flex items-start justify-between">
+          <div>
+            <h1 className="text-3xl font-bold">Citizen Engagement Portal</h1>
+            <p className="text-muted-foreground">
+              Report pollution issues and track your complaints
+            </p>
+          </div>
+
+          <div className="ml-4 flex items-center">
+            <div className="bg-primary/5 border border-primary/20 rounded-lg px-3 py-2 flex items-center gap-3">
+              <div className="hidden sm:flex flex-col">
+                <span className="text-sm font-semibold">Take a pledge today</span>
+                <span className="text-xs text-muted-foreground">Commit to cleaner air — it takes 2 minutes</span>
+              </div>
+
+              <Button asChild variant="default" size="sm" className="whitespace-nowrap">
+                <a
+                  href="https://nmba.dosje.gov.in/content/take-a-pledge"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <CheckCircle className="h-4 w-4" />
+                  Pledge Now
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
