@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AdminLayout } from "@/components/admin/AdminLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -41,63 +41,8 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import type { AdminComplaint } from "@/types/admin";
 
-// Mock data - would come from API
-const initialComplaints: AdminComplaint[] = [
-  {
-    id: "C001",
-    title: "Excessive smoke from factory",
-    category: "Industrial Emission",
-    ward: "East Ward",
-    status: "pending",
-    submittedAt: "2024-01-15T10:30:00",
-    description: "Black smoke observed from the textile factory on MG Road. Affects residential area nearby.",
-    location: "MG Road, Near Metro Station",
-  },
-  {
-    id: "C002",
-    title: "Construction dust pollution",
-    category: "Construction",
-    ward: "Central Ward",
-    status: "in-progress",
-    submittedAt: "2024-01-14T14:20:00",
-    description: "Heavy dust from ongoing metro construction site affecting traffic and pedestrians.",
-    location: "Central Avenue, Block 5",
-    assignedTo: "Municipal Team B",
-  },
-  {
-    id: "C003",
-    title: "Open waste burning",
-    category: "Waste Burning",
-    ward: "West Ward",
-    status: "pending",
-    submittedAt: "2024-01-13T09:15:00",
-    description: "Daily waste burning observed in vacant plot near school. Health hazard for students.",
-    location: "Plot 42, School Road",
-  },
-  {
-    id: "C004",
-    title: "Vehicle emission hotspot",
-    category: "Vehicle Pollution",
-    ward: "North Ward",
-    status: "resolved",
-    submittedAt: "2024-01-10T16:45:00",
-    description: "Heavy traffic congestion causing severe air pollution during peak hours.",
-    location: "Highway Junction, North Gate",
-    resolutionRemarks: "Traffic rerouted. Additional signals installed.",
-    resolvedAt: "2024-01-12T11:00:00",
-  },
-  {
-    id: "C005",
-    title: "Industrial effluent smell",
-    category: "Industrial Emission",
-    ward: "South Ward",
-    status: "in-progress",
-    submittedAt: "2024-01-12T08:00:00",
-    description: "Strong chemical smell from industrial zone affecting nearby colonies.",
-    location: "Industrial Area Phase 2",
-    assignedTo: "Pollution Control Board",
-  },
-];
+// Complaints will be loaded from backend
+const initialComplaints: AdminComplaint[] = [];
 
 const statusConfig = {
   pending: { 
@@ -176,6 +121,40 @@ export default function AdminComplaints() {
       minute: "2-digit",
     });
   };
+
+  useEffect(() => {
+    let mounted = true;
+    const fetchComplaints = async () => {
+      try {
+        const res = await fetch("http://localhost:5001/api/complaints");
+        const body = await res.json();
+        if (!res.ok) throw new Error(body.message || "Failed to fetch");
+        const mapped: AdminComplaint[] = body.data.map((c: any) => ({
+          id: c._id,
+          title: c.title,
+          category: c.category,
+          ward: c.ward,
+          status: c.status,
+          submittedAt: c.createdAt,
+          description: c.description,
+          location: c.location,
+          resolutionRemarks: c.resolutionRemarks,
+          resolvedAt: c.resolvedAt,
+        }));
+        if (mounted) setComplaints(mapped);
+      } catch (err) {
+        // ignore for now; Admin UI can show empty state
+        console.error("Failed to load complaints", err);
+      }
+    };
+
+    fetchComplaints();
+    const id = setInterval(fetchComplaints, 10000);
+    return () => {
+      mounted = false;
+      clearInterval(id);
+    };
+  }, []);
 
   return (
     <AdminLayout>

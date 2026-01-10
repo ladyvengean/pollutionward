@@ -29,12 +29,12 @@ interface Complaint {
   title: string;
   category: string;
   ward: string;
-  status: "submitted" | "under-review" | "in-progress" | "resolved";
+  status: "pending" | "submitted" | "under-review" | "in-progress" | "resolved";
   date: string;
   description: string;
 }
 
-const complaints: Complaint[] = [
+const initialComplaints: Complaint[] = [
   {
     id: "C001",
     title: "Excessive smoke from factory",
@@ -64,7 +64,10 @@ const complaints: Complaint[] = [
   },
 ];
 
+
+
 const statusConfig = {
+  pending: { color: "warning", icon: AlertCircle, label: "Pending" },
   submitted: { color: "secondary", icon: FileText, label: "Submitted" },
   "under-review": { color: "warning", icon: Search, label: "Under Review" },
   "in-progress": { color: "info", icon: Clock, label: "In Progress" },
@@ -178,20 +181,41 @@ export default function CitizenPortal() {
     description: "",
     location: "",
   });
+  const [complaints, setComplaints] = useState<Complaint[]>(initialComplaints);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Complaint Submitted Successfully",
-      description: "Your complaint has been registered. Track ID: C004",
-    });
-    setFormData({
-      title: "",
-      category: "",
-      ward: "",
-      description: "",
-      location: "",
-    });
+    try {
+      const res = await fetch("http://localhost:5001/api/complaints", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const body = await res.json();
+      if (!res.ok) throw new Error(body.message || "Failed to submit");
+
+      const created = body.data;
+      const newItem: Complaint = {
+        id: created._id,
+        title: created.title,
+        category: created.category,
+        ward: created.ward,
+        status: created.status || "pending",
+        date: created.createdAt ? new Date(created.createdAt).toLocaleDateString() : "",
+        description: created.description,
+      };
+
+      setComplaints((p) => [newItem, ...p]);
+
+      toast({
+        title: "Complaint Submitted Successfully",
+        description: `Your complaint has been registered. Track ID: ${newItem.id}`,
+      });
+
+      setFormData({ title: "", category: "", ward: "", description: "", location: "" });
+    } catch (err: any) {
+      toast({ title: "Submission failed", description: err.message || String(err) });
+    }
   };
 
   return (
