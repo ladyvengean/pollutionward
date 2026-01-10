@@ -1,3 +1,6 @@
+
+
+
 import { NavLink, useLocation } from "react-router-dom";
 import {
   LayoutDashboard,
@@ -9,6 +12,7 @@ import {
   Leaf,
   Menu,
   X,
+  Map,  
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
@@ -17,6 +21,7 @@ import { Button } from "@/components/ui/button";
 const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
   { name: "Ward Details", href: "/ward", icon: MapPin },
+  { name: "Maps", href: "/maps", icon: Map },  // Add this line
   { name: "Recommendations", href: "/recommendations", icon: Lightbulb },
   { name: "Citizen Portal", href: "/citizen", icon: Users },
   { name: "Analytics", href: "/analytics", icon: BarChart3 },

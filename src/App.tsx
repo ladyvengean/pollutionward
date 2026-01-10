@@ -10,7 +10,8 @@ import CitizenPortal from "./pages/CitizenPortal";
 import Analytics from "./pages/Analytics";
 import Alerts from "./pages/Alerts";
 import NotFound from "./pages/NotFound";
-
+import WardMap from "./components/WardMap";
+import Map from "./pages/Map";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -27,10 +28,17 @@ const App = () => (
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/alerts" element={<Alerts />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/maps" element={<Map />} /> 
+
+
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
+
+// function App() {
+//   return <WardMap />;
+// }
 
 export default App;
