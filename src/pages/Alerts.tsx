@@ -16,6 +16,17 @@ import {
   X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+async function updateNotifications(payload: {
+  dailySummary?: boolean;
+  emailNotifications?: boolean;
+}) {
+  await fetch("http://localhost:8000/api/notifications/update", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+}
+
 
 interface Alert {
   id: string;
@@ -211,6 +222,9 @@ export default function Alerts() {
     "all"
   );
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
+  const [dailySummary, setDailySummary] = useState(true);
+  const [emailNotifications, setEmailNotifications] = useState(false);
+
 
   const handleAcknowledge = (id: string) => {
     setAlertList((prev) =>
@@ -383,6 +397,7 @@ export default function Alerts() {
         </div>
 
         {/* Notification Settings */}
+        
         <div
           className="bg-card rounded-xl border border-border p-6 shadow-card animate-fade-in"
           style={{ animationDelay: "0.3s" }}
@@ -414,7 +429,14 @@ export default function Alerts() {
                   Receive daily pollution summary at 8 AM
                 </p>
               </div>
-              <Switch defaultChecked />
+              <Switch
+  checked={dailySummary}
+  onCheckedChange={(checked) => {
+    setDailySummary(checked);
+    updateNotifications({ dailySummary: checked });
+  }}
+/>
+
             </div>
             <div className="flex items-center justify-between p-3 rounded-lg bg-muted/50">
               <div>
@@ -423,7 +445,14 @@ export default function Alerts() {
                   Send critical alerts via email
                 </p>
               </div>
-              <Switch />
+              <Switch
+  checked={emailNotifications}
+  onCheckedChange={(checked) => {
+    setEmailNotifications(checked);
+    updateNotifications({ emailNotifications: checked });
+  }}
+/>
+
             </div>
           </div>
         </div>

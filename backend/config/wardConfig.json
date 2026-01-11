@@ -1,0 +1,1684 @@
+[
+    {
+      "ward_id": "DELHI_001",
+      "name": "Narela",
+      "zone": "Narela",
+      "lat": 28.8464766,
+      "lon": 77.0856631
+    },
+    {
+      "ward_id": "DELHI_002",
+      "name": "Bankner",
+      "zone": "Narela",
+      "lat": 28.8528173,
+      "lon": 77.0767213
+    },
+    {
+      "ward_id": "DELHI_003",
+      "name": "Holambi Kalan",
+      "zone": "Narela",
+      "lat": 28.8070269,
+      "lon": 77.0967976
+    },
+    {
+      "ward_id": "DELHI_004",
+      "name": "Alipur",
+      "zone": "Narela",
+      "lat": 28.7973118,
+      "lon": 77.138667
+    },
+    {
+      "ward_id": "DELHI_005",
+      "name": "Bakhtawarpur",
+      "zone": "Narela",
+      "lat": 28.8244031,
+      "lon": 77.172315
+    },
+    {
+      "ward_id": "DELHI_026",
+      "name": "Pooth Kalan",
+      "zone": "Narela",
+      "lat": 28.7157524,
+      "lon": 77.0742604
+    },
+    {
+      "ward_id": "DELHI_027",
+      "name": "Begumpur",
+      "zone": "Narela",
+      "lat": 28.5369782,
+      "lon": 77.2099406
+    },
+    {
+      "ward_id": "DELHI_028",
+      "name": "Shahbaad Dairy",
+      "zone": "Narela"
+    },
+    {
+      "ward_id": "DELHI_029",
+      "name": "Pooth Khurd",
+      "zone": "Narela"
+    },
+    {
+      "ward_id": "DELHI_030",
+      "name": "Bawana",
+      "zone": "Narela",
+      "lat": 28.79966,
+      "lon": 77.0328847
+    },
+    {
+      "ward_id": "DELHI_031",
+      "name": "Nangal Thakran",
+      "zone": "Narela",
+      "lat": 28.8101719,
+      "lon": 77.0031509
+    },
+    {
+      "ward_id": "DELHI_032",
+      "name": "Kanjhawala",
+      "zone": "Narela",
+      "lat": 28.7358173,
+      "lon": 77.0043151
+    },
+    {
+      "ward_id": "DELHI_033",
+      "name": "Rani Khera",
+      "zone": "Narela",
+      "lat": 28.7061763,
+      "lon": 77.0234192
+    },
+    {
+      "ward_id": "DELHI_034",
+      "name": "Nangloi",
+      "zone": "Narela",
+      "lat": 28.6824007,
+      "lon": 77.0647319
+    },
+    {
+      "ward_id": "DELHI_035",
+      "name": "Mundka",
+      "zone": "Narela",
+      "lat": 28.6824341,
+      "lon": 77.0305741
+    },
+    {
+      "ward_id": "DELHI_036",
+      "name": "Nilothi",
+      "zone": "Narela",
+      "lat": 28.6504282,
+      "lon": 77.0622744
+    },
+    {
+      "ward_id": "DELHI_006",
+      "name": "Burari",
+      "zone": "Civil Line",
+      "lat": 28.7536438,
+      "lon": 77.2016511
+    },
+    {
+      "ward_id": "DELHI_007",
+      "name": "Kadipur",
+      "zone": "Civil Line",
+      "lat": 28.7719577,
+      "lon": 77.1618756
+    },
+    {
+      "ward_id": "DELHI_008",
+      "name": "Mukundpur",
+      "zone": "Civil Line",
+      "lat": 28.7172545,
+      "lon": 77.1818101
+    },
+    {
+      "ward_id": "DELHI_009",
+      "name": "Sant Nagar",
+      "zone": "Civil Line",
+      "lat": 28.5548352,
+      "lon": 77.2495194
+    },
+    {
+      "ward_id": "DELHI_010",
+      "name": "Jharoda",
+      "zone": "Civil Line",
+      "lat": 28.6532995,
+      "lon": 76.9526021
+    },
+    {
+      "ward_id": "DELHI_011",
+      "name": "Timarpur",
+      "zone": "Civil Line",
+      "lat": 28.7012628,
+      "lon": 77.2186795
+    },
+    {
+      "ward_id": "DELHI_012",
+      "name": "Malka Ganj",
+      "zone": "Civil Line",
+      "lat": 28.6764176,
+      "lon": 77.2089386
+    },
+    {
+      "ward_id": "DELHI_013",
+      "name": "Mukherjee Nagar",
+      "zone": "Civil Line",
+      "lat": 28.7125567,
+      "lon": 77.2144044
+    },
+    {
+      "ward_id": "DELHI_014",
+      "name": "Dhirpur",
+      "zone": "Civil Line",
+      "lat": 28.7155125,
+      "lon": 77.2027862
+    },
+    {
+      "ward_id": "DELHI_015",
+      "name": "Adarsh Nagar",
+      "zone": "Civil Line",
+      "lat": 28.7165805,
+      "lon": 77.1704223
+    },
+    {
+      "ward_id": "DELHI_016",
+      "name": "Azadpur",
+      "zone": "Civil Line",
+      "lat": 28.7057821,
+      "lon": 77.1819488
+    },
+    {
+      "ward_id": "DELHI_017",
+      "name": "Bhalswa",
+      "zone": "Civil Line",
+      "lat": 28.7454994,
+      "lon": 77.1588277
+    },
+    {
+      "ward_id": "DELHI_018",
+      "name": "Jahangir Puri",
+      "zone": "Civil Line",
+      "lat": 28.7301654,
+      "lon": 77.1679057
+    },
+    {
+      "ward_id": "DELHI_019",
+      "name": "Sarup Nagar",
+      "zone": "Civil Line",
+      "lat": 28.6783092,
+      "lon": 77.1561058
+    },
+    {
+      "ward_id": "DELHI_020",
+      "name": "Samaypur Badli",
+      "zone": "Civil Line",
+      "lat": 28.7446411,
+      "lon": 77.1382701
+    },
+    {
+      "ward_id": "DELHI_021",
+      "name": "Rohini-A",
+      "zone": "Rohini",
+      "lat": 28.7162092,
+      "lon": 77.1170743
+    },
+    {
+      "ward_id": "DELHI_022",
+      "name": "Rohini-B",
+      "zone": "Rohini",
+      "lat": 28.7144056,
+      "lon": 77.1296923
+    },
+    {
+      "ward_id": "DELHI_023",
+      "name": "Rithala",
+      "zone": "Rohini",
+      "lat": 28.7208064,
+      "lon": 77.1071813
+    },
+    {
+      "ward_id": "DELHI_024",
+      "name": "Vijay Vihar",
+      "zone": "Rohini",
+      "lat": 28.7116301,
+      "lon": 77.0978704
+    },
+    {
+      "ward_id": "DELHI_025",
+      "name": "Budh Vihar",
+      "zone": "Rohini",
+      "lat": 28.5512592,
+      "lon": 77.1709353
+    },
+    {
+      "ward_id": "DELHI_037",
+      "name": "Kirari",
+      "zone": "Rohini",
+      "lat": 28.6687479,
+      "lon": 77.0558992
+    },
+    {
+      "ward_id": "DELHI_038",
+      "name": "Prem Nagar",
+      "zone": "Rohini",
+      "lat": 28.5785161,
+      "lon": 77.2195112
+    },
+    {
+      "ward_id": "DELHI_039",
+      "name": "Mubarikpur",
+      "zone": "Rohini",
+      "lat": 28.848682,
+      "lon": 77.3255935
+    },
+    {
+      "ward_id": "DELHI_040",
+      "name": "Nithari",
+      "zone": "Rohini",
+      "lat": 28.7079857,
+      "lon": 77.0540424
+    },
+    {
+      "ward_id": "DELHI_041",
+      "name": "Aman Vihar",
+      "zone": "Rohini",
+      "lat": 28.7178512,
+      "lon": 77.0649881
+    },
+    {
+      "ward_id": "DELHI_042",
+      "name": "Mangol Puri",
+      "zone": "Rohini",
+      "lat": 28.6978392,
+      "lon": 77.0955864
+    },
+    {
+      "ward_id": "DELHI_043",
+      "name": "Sultanpuri-A",
+      "zone": "Rohini",
+      "lat": 28.6996553,
+      "lon": 77.0662843
+    },
+    {
+      "ward_id": "DELHI_044",
+      "name": "Sultanpuri-B",
+      "zone": "Rohini",
+      "lat": 28.6996553,
+      "lon": 77.0662843
+    },
+    {
+      "ward_id": "DELHI_045",
+      "name": "Jawalapuri",
+      "zone": "Rohini",
+      "lat": 28.6784823,
+      "lon": 77.0768673
+    },
+    {
+      "ward_id": "DELHI_046",
+      "name": "Nangloi Jat",
+      "zone": "Rohini"
+    },
+    {
+      "ward_id": "DELHI_047",
+      "name": "Nihal Vihar",
+      "zone": "Rohini",
+      "lat": 28.6593089,
+      "lon": 77.0744632
+    },
+    {
+      "ward_id": "DELHI_048",
+      "name": "Guru Harkishan Nagar",
+      "zone": "Rohini"
+    },
+    {
+      "ward_id": "DELHI_049",
+      "name": "Mangolpuri-A",
+      "zone": "Rohini",
+      "lat": 28.6948263,
+      "lon": 77.0896186
+    },
+    {
+      "ward_id": "DELHI_050",
+      "name": "Mangolpuri-B",
+      "zone": "Rohini",
+      "lat": 28.6948263,
+      "lon": 77.0896186
+    },
+    {
+      "ward_id": "DELHI_051",
+      "name": "Rohini-C",
+      "zone": "Rohini",
+      "lat": 28.7162092,
+      "lon": 77.1170743
+    },
+    {
+      "ward_id": "DELHI_052",
+      "name": "Rohini-F",
+      "zone": "Rohini",
+      "lat": 28.7162092,
+      "lon": 77.1170743
+    },
+    {
+      "ward_id": "DELHI_053",
+      "name": "Rohini-E",
+      "zone": "Rohini",
+      "lat": 28.7075774,
+      "lon": 77.1259971
+    },
+    {
+      "ward_id": "DELHI_054",
+      "name": "Rohini-D",
+      "zone": "Rohini",
+      "lat": 28.7162092,
+      "lon": 77.1170743
+    },
+    {
+      "ward_id": "DELHI_055",
+      "name": "Shalimar Bagh-A",
+      "zone": "Keshavpuram",
+      "lat": 28.7081295,
+      "lon": 77.1611881
+    },
+    {
+      "ward_id": "DELHI_056",
+      "name": "Shalimar Bagh-B",
+      "zone": "Keshavpuram",
+      "lat": 28.7081295,
+      "lon": 77.1611881
+    },
+    {
+      "ward_id": "DELHI_057",
+      "name": "Pitam Pura",
+      "zone": "Keshavpuram",
+      "lat": 28.7032676,
+      "lon": 77.1322497
+    },
+    {
+      "ward_id": "DELHI_058",
+      "name": "Saraswati Vihar",
+      "zone": "Keshavpuram",
+      "lat": 28.7002238,
+      "lon": 77.1249359
+    },
+    {
+      "ward_id": "DELHI_059",
+      "name": "Paschim Vihar",
+      "zone": "Keshavpuram",
+      "lat": 28.6695782,
+      "lon": 77.095956
+    },
+    {
+      "ward_id": "DELHI_060",
+      "name": "Rani Bagh",
+      "zone": "Keshavpuram",
+      "lat": 28.6859821,
+      "lon": 77.1325245
+    },
+    {
+      "ward_id": "DELHI_061",
+      "name": "Kohat Enclave",
+      "zone": "Keshavpuram",
+      "lat": 28.6980415,
+      "lon": 77.1405393
+    },
+    {
+      "ward_id": "DELHI_062",
+      "name": "Shakur Pur",
+      "zone": "Keshavpuram",
+      "lat": 28.6901201,
+      "lon": 77.1460945
+    },
+    {
+      "ward_id": "DELHI_063",
+      "name": "Tri Nagar",
+      "zone": "Keshavpuram"
+    },
+    {
+      "ward_id": "DELHI_064",
+      "name": "Keshav Puram",
+      "zone": "Keshavpuram",
+      "lat": 28.6889264,
+      "lon": 77.1616833
+    },
+    {
+      "ward_id": "DELHI_065",
+      "name": "Ashok Vihar",
+      "zone": "Keshavpuram",
+      "lat": 28.6885171,
+      "lon": 77.1739339
+    },
+    {
+      "ward_id": "DELHI_066",
+      "name": "Wazir Pur",
+      "zone": "Keshavpuram",
+      "lat": 28.7246928,
+      "lon": 77.1518297
+    },
+    {
+      "ward_id": "DELHI_067",
+      "name": "Sangam Park",
+      "zone": "Keshavpuram",
+      "lat": 28.5106563,
+      "lon": 77.2443646
+    },
+    {
+      "ward_id": "DELHI_068",
+      "name": "Model Town",
+      "zone": "Keshavpuram",
+      "lat": 28.707334,
+      "lon": 77.1885231
+    },
+    {
+      "ward_id": "DELHI_069",
+      "name": "Kamla Nagar",
+      "zone": "Keshavpuram",
+      "lat": 28.6806752,
+      "lon": 77.2039504
+    },
+    {
+      "ward_id": "DELHI_070",
+      "name": "Shastri Nagar",
+      "zone": "City S.P.Zone",
+      "lat": 28.6700885,
+      "lon": 77.1818589
+    },
+    {
+      "ward_id": "DELHI_071",
+      "name": "Kishan Ganj",
+      "zone": "City S.P.Zone",
+      "lat": 28.6627442,
+      "lon": 77.1979077
+    },
+    {
+      "ward_id": "DELHI_072",
+      "name": "Sadar Bazar",
+      "zone": "City S.P.Zone",
+      "lat": 28.658087,
+      "lon": 77.2170087
+    },
+    {
+      "ward_id": "DELHI_073",
+      "name": "Civil Lines",
+      "zone": "City S.P.Zone",
+      "lat": 28.6806862,
+      "lon": 77.2225999
+    },
+    {
+      "ward_id": "DELHI_074",
+      "name": "Chandni Chowk",
+      "zone": "City S.P.Zone",
+      "lat": 28.6559834,
+      "lon": 77.2321937
+    },
+    {
+      "ward_id": "DELHI_075",
+      "name": "Jama Masjid",
+      "zone": "City S.P.Zone",
+      "lat": 28.6506822,
+      "lon": 77.232961
+    },
+    {
+      "ward_id": "DELHI_076",
+      "name": "Chandani Mahal",
+      "zone": "City S.P.Zone"
+    },
+    {
+      "ward_id": "DELHI_077",
+      "name": "Delhi Gate",
+      "zone": "City S.P.Zone",
+      "lat": 28.6392174,
+      "lon": 77.2407795
+    },
+    {
+      "ward_id": "DELHI_078",
+      "name": "Bazar Sita Ram",
+      "zone": "City S.P.Zone",
+      "lat": 28.6499077,
+      "lon": 77.2261794
+    },
+    {
+      "ward_id": "DELHI_079",
+      "name": "Ballimaran",
+      "zone": "City S.P.Zone",
+      "lat": 28.6531586,
+      "lon": 77.2254416
+    },
+    {
+      "ward_id": "DELHI_080",
+      "name": "Ram Nagar",
+      "zone": "City S.P.Zone",
+      "lat": 28.6789864,
+      "lon": 77.2967005
+    },
+    {
+      "ward_id": "DELHI_081",
+      "name": "Quraish Nagar",
+      "zone": "City S.P.Zone"
+    },
+    {
+      "ward_id": "DELHI_082",
+      "name": "Pahar Ganj",
+      "zone": "Karolbagh",
+      "lat": 28.6398522,
+      "lon": 77.2130306
+    },
+    {
+      "ward_id": "DELHI_083",
+      "name": "Karol Bagh",
+      "zone": "Karolbagh",
+      "lat": 28.6529982,
+      "lon": 77.1890227
+    },
+    {
+      "ward_id": "DELHI_084",
+      "name": "Dev Nagar",
+      "zone": "Karolbagh",
+      "lat": 28.7518125,
+      "lon": 77.1751866
+    },
+    {
+      "ward_id": "DELHI_085",
+      "name": "West Patel Nagar",
+      "zone": "Karolbagh",
+      "lat": 28.6519279,
+      "lon": 77.162923
+    },
+    {
+      "ward_id": "DELHI_086",
+      "name": "East Patel Nagar",
+      "zone": "Karolbagh",
+      "lat": 28.645649,
+      "lon": 77.1725666
+    },
+    {
+      "ward_id": "DELHI_087",
+      "name": "Ranjeet Nagar",
+      "zone": "Karolbagh",
+      "lat": 28.6459661,
+      "lon": 77.162929
+    },
+    {
+      "ward_id": "DELHI_088",
+      "name": "Baljeet Nagar",
+      "zone": "Karolbagh",
+      "lat": 28.6563217,
+      "lon": 77.1605162
+    },
+    {
+      "ward_id": "DELHI_089",
+      "name": "Karam Pura",
+      "zone": "Karolbagh"
+    },
+    {
+      "ward_id": "DELHI_090",
+      "name": "Moti Nagar",
+      "zone": "Karolbagh",
+      "lat": 28.657859,
+      "lon": 77.1424288
+    },
+    {
+      "ward_id": "DELHI_091",
+      "name": "Ramesh Nagar",
+      "zone": "Karolbagh",
+      "lat": 28.6527444,
+      "lon": 77.1316496
+    },
+    {
+      "ward_id": "DELHI_139",
+      "name": "Naraina",
+      "zone": "Karolbagh",
+      "lat": 28.6264562,
+      "lon": 77.1349668
+    },
+    {
+      "ward_id": "DELHI_140",
+      "name": "Inder Puri",
+      "zone": "Karolbagh",
+      "lat": 28.729945,
+      "lon": 77.1707212
+    },
+    {
+      "ward_id": "DELHI_141",
+      "name": "Rajinder Nagar",
+      "zone": "Karolbagh",
+      "lat": 28.6357855,
+      "lon": 77.1841395
+    },
+    {
+      "ward_id": "DELHI_092",
+      "name": "Punjabi Bagh",
+      "zone": "West Zone",
+      "lat": 28.672995,
+      "lon": 77.1461239
+    },
+    {
+      "ward_id": "DELHI_093",
+      "name": "Madipur",
+      "zone": "West Zone",
+      "lat": 28.6764752,
+      "lon": 77.1193599
+    },
+    {
+      "ward_id": "DELHI_094",
+      "name": "Raghubir Nagar",
+      "zone": "West Zone",
+      "lat": 28.6565574,
+      "lon": 77.1122381
+    },
+    {
+      "ward_id": "DELHI_095",
+      "name": "Vishnu Garden",
+      "zone": "West Zone",
+      "lat": 28.6524333,
+      "lon": 77.1000592
+    },
+    {
+      "ward_id": "DELHI_096",
+      "name": "Rajouri Garden",
+      "zone": "West Zone",
+      "lat": 28.6490563,
+      "lon": 77.1227198
+    },
+    {
+      "ward_id": "DELHI_097",
+      "name": "Chaukhandi Nagar",
+      "zone": "West Zone",
+      "lat": 28.6451383,
+      "lon": 77.0965683
+    },
+    {
+      "ward_id": "DELHI_098",
+      "name": "Subhash Nagar",
+      "zone": "West Zone",
+      "lat": 28.6404628,
+      "lon": 77.1052347
+    },
+    {
+      "ward_id": "DELHI_099",
+      "name": "Hari Nagar",
+      "zone": "West Zone",
+      "lat": 28.6296489,
+      "lon": 77.1119344
+    },
+    {
+      "ward_id": "DELHI_100",
+      "name": "Fateh Nagar",
+      "zone": "West Zone",
+      "lat": 28.6315015,
+      "lon": 77.1006012
+    },
+    {
+      "ward_id": "DELHI_101",
+      "name": "Tilak Nagar",
+      "zone": "West Zone",
+      "lat": 28.6365482,
+      "lon": 77.0964961
+    },
+    {
+      "ward_id": "DELHI_102",
+      "name": "Khyala",
+      "zone": "West Zone",
+      "lat": 28.656392,
+      "lon": 77.1009017
+    },
+    {
+      "ward_id": "DELHI_103",
+      "name": "Keshopur",
+      "zone": "West Zone",
+      "lat": 28.647489,
+      "lon": 77.0825942
+    },
+    {
+      "ward_id": "DELHI_104",
+      "name": "Janak Puri South",
+      "zone": "West Zone"
+    },
+    {
+      "ward_id": "DELHI_105",
+      "name": "Mahaveer Enclave",
+      "zone": "West Zone"
+    },
+    {
+      "ward_id": "DELHI_106",
+      "name": "Janak Puri West",
+      "zone": "West Zone",
+      "lat": 28.6280473,
+      "lon": 77.089447
+    },
+    {
+      "ward_id": "DELHI_107",
+      "name": "Vikas Puri",
+      "zone": "West Zone",
+      "lat": 28.6301441,
+      "lon": 77.0682683
+    },
+    {
+      "ward_id": "DELHI_108",
+      "name": "Hastsal",
+      "zone": "West Zone",
+      "lat": 28.6359648,
+      "lon": 77.0487636
+    },
+    {
+      "ward_id": "DELHI_109",
+      "name": "Vikas Nagar",
+      "zone": "West Zone",
+      "lat": 28.6440092,
+      "lon": 77.0544704
+    },
+    {
+      "ward_id": "DELHI_110",
+      "name": "Kunwar Singh Nagar",
+      "zone": "West Zone"
+    },
+    {
+      "ward_id": "DELHI_111",
+      "name": "Baprola",
+      "zone": "West Zone",
+      "lat": 28.6403835,
+      "lon": 77.0128901
+    },
+    {
+      "ward_id": "DELHI_112",
+      "name": "Sainik Enclave",
+      "zone": "West Zone",
+      "lat": 28.6140561,
+      "lon": 77.0051854
+    },
+    {
+      "ward_id": "DELHI_113",
+      "name": "Mohan Garden",
+      "zone": "West Zone",
+      "lat": 28.6296564,
+      "lon": 77.0380083
+    },
+    {
+      "ward_id": "DELHI_114",
+      "name": "Nawada",
+      "zone": "West Zone",
+      "lat": 28.6202758,
+      "lon": 77.0450787
+    },
+    {
+      "ward_id": "DELHI_115",
+      "name": "Uttam Nagar",
+      "zone": "West Zone",
+      "lat": 28.6215226,
+      "lon": 77.0611064
+    },
+    {
+      "ward_id": "DELHI_116",
+      "name": "Binda Pur",
+      "zone": "West Zone"
+    },
+    {
+      "ward_id": "DELHI_117",
+      "name": "Dabri",
+      "zone": "Najafgarh Zone",
+      "lat": 28.6100971,
+      "lon": 77.0888864
+    },
+    {
+      "ward_id": "DELHI_118",
+      "name": "Sagarpur",
+      "zone": "Najafgarh Zone",
+      "lat": 28.6091456,
+      "lon": 77.0995916
+    },
+    {
+      "ward_id": "DELHI_119",
+      "name": "Manglapuri",
+      "zone": "Najafgarh Zone",
+      "lat": 28.5893101,
+      "lon": 77.0876296
+    },
+    {
+      "ward_id": "DELHI_120",
+      "name": "Dwarka-B",
+      "zone": "Najafgarh Zone",
+      "lat": 28.589899,
+      "lon": 77.0614881
+    },
+    {
+      "ward_id": "DELHI_121",
+      "name": "Dwarka-A",
+      "zone": "Najafgarh Zone",
+      "lat": 28.5973786,
+      "lon": 77.0669997
+    },
+    {
+      "ward_id": "DELHI_122",
+      "name": "Matiala",
+      "zone": "Najafgarh Zone",
+      "lat": 28.609631,
+      "lon": 77.0467536
+    },
+    {
+      "ward_id": "DELHI_123",
+      "name": "Kakrola",
+      "zone": "Najafgarh Zone",
+      "lat": 28.607616,
+      "lon": 77.0168131
+    },
+    {
+      "ward_id": "DELHI_124",
+      "name": "Nangli Sakrawati",
+      "zone": "Najafgarh Zone",
+      "lat": 28.6196158,
+      "lon": 77.0016997
+    },
+    {
+      "ward_id": "DELHI_125",
+      "name": "Chhawala",
+      "zone": "Najafgarh Zone"
+    },
+    {
+      "ward_id": "DELHI_126",
+      "name": "Isapur",
+      "zone": "Najafgarh Zone"
+    },
+    {
+      "ward_id": "DELHI_127",
+      "name": "Najafgarh",
+      "zone": "Najafgarh Zone",
+      "lat": 28.6124504,
+      "lon": 76.9865067
+    },
+    {
+      "ward_id": "DELHI_128",
+      "name": "Dichaon Kalan",
+      "zone": "Najafgarh Zone",
+      "lat": 28.6405697,
+      "lon": 76.9827287
+    },
+    {
+      "ward_id": "DELHI_129",
+      "name": "Roshan Pura",
+      "zone": "Najafgarh Zone",
+      "lat": 28.6067278,
+      "lon": 76.9889015
+    },
+    {
+      "ward_id": "DELHI_130",
+      "name": "Dwarka-C",
+      "zone": "Najafgarh Zone",
+      "lat": 28.5902565,
+      "lon": 77.061657
+    },
+    {
+      "ward_id": "DELHI_131",
+      "name": "Bijwasan",
+      "zone": "Najafgarh Zone",
+      "lat": 28.5369587,
+      "lon": 77.0512889
+    },
+    {
+      "ward_id": "DELHI_132",
+      "name": "Kapashera",
+      "zone": "Najafgarh Zone",
+      "lat": 28.527295,
+      "lon": 77.0823049
+    },
+    {
+      "ward_id": "DELHI_133",
+      "name": "Mahipalpur",
+      "zone": "Najafgarh Zone",
+      "lat": 28.544537,
+      "lon": 77.1279229
+    },
+    {
+      "ward_id": "DELHI_134",
+      "name": "Raj Nagar",
+      "zone": "Najafgarh Zone",
+      "lat": 28.5695607,
+      "lon": 77.2013924
+    },
+    {
+      "ward_id": "DELHI_135",
+      "name": "Palam",
+      "zone": "Najafgarh Zone",
+      "lat": 28.5918933,
+      "lon": 77.0828242
+    },
+    {
+      "ward_id": "DELHI_136",
+      "name": "Madhu Vihar",
+      "zone": "Najafgarh Zone",
+      "lat": 28.636056,
+      "lon": 77.3043835
+    },
+    {
+      "ward_id": "DELHI_137",
+      "name": "Mahavir Enclave",
+      "zone": "Najafgarh Zone",
+      "lat": 28.600032,
+      "lon": 77.0789777
+    },
+    {
+      "ward_id": "DELHI_138",
+      "name": "Sadh Nagar",
+      "zone": "Najafgarh Zone",
+      "lat": 28.5863961,
+      "lon": 77.0915418
+    },
+    {
+      "ward_id": "DELHI_142",
+      "name": "Daryaganj",
+      "zone": "Central Zone",
+      "lat": 28.64609,
+      "lon": 77.243048
+    },
+    {
+      "ward_id": "DELHI_143",
+      "name": "Sidhartha Nagar",
+      "zone": "Central Zone"
+    },
+    {
+      "ward_id": "DELHI_144",
+      "name": "Lajpat Nagar",
+      "zone": "Central Zone",
+      "lat": 28.5660924,
+      "lon": 77.2432851
+    },
+    {
+      "ward_id": "DELHI_145",
+      "name": "Andrews Ganj",
+      "zone": "Central Zone",
+      "lat": 28.5645794,
+      "lon": 77.2280478
+    },
+    {
+      "ward_id": "DELHI_146",
+      "name": "Amar Colony",
+      "zone": "Central Zone",
+      "lat": 28.5615391,
+      "lon": 77.2431499
+    },
+    {
+      "ward_id": "DELHI_147",
+      "name": "Kotla Mubarakpur",
+      "zone": "Central Zone",
+      "lat": 28.5759348,
+      "lon": 77.2251127
+    },
+    {
+      "ward_id": "DELHI_168",
+      "name": "Sangam Vihar-C",
+      "zone": "Central Zone",
+      "lat": 28.5057128,
+      "lon": 77.2484672
+    },
+    {
+      "ward_id": "DELHI_169",
+      "name": "Sangam Vihar-B",
+      "zone": "Central Zone",
+      "lat": 28.5057128,
+      "lon": 77.2484672
+    },
+    {
+      "ward_id": "DELHI_170",
+      "name": "Tughlakabad Extension",
+      "zone": "Central Zone",
+      "lat": 28.5228329,
+      "lon": 77.2590819
+    },
+    {
+      "ward_id": "DELHI_174",
+      "name": "Sri Niwas Puri",
+      "zone": "Central Zone",
+      "lat": 28.5648926,
+      "lon": 77.2591896
+    },
+    {
+      "ward_id": "DELHI_175",
+      "name": "Kalkaji",
+      "zone": "Central Zone",
+      "lat": 28.5469476,
+      "lon": 77.258801
+    },
+    {
+      "ward_id": "DELHI_176",
+      "name": "Govind Puri",
+      "zone": "Central Zone",
+      "lat": 28.5445521,
+      "lon": 77.2642761
+    },
+    {
+      "ward_id": "DELHI_177",
+      "name": "Harkesh Nagar",
+      "zone": "Central Zone",
+      "lat": 28.5461479,
+      "lon": 77.2752266
+    },
+    {
+      "ward_id": "DELHI_178",
+      "name": "Tughlakabad",
+      "zone": "Central Zone",
+      "lat": 28.5025432,
+      "lon": 77.2993825
+    },
+    {
+      "ward_id": "DELHI_179",
+      "name": "Pul Pehladpur",
+      "zone": "Central Zone"
+    },
+    {
+      "ward_id": "DELHI_180",
+      "name": "Badarpur",
+      "zone": "Central Zone",
+      "lat": 28.4932633,
+      "lon": 77.3030303
+    },
+    {
+      "ward_id": "DELHI_181",
+      "name": "Molarband",
+      "zone": "Central Zone",
+      "lat": 28.5011143,
+      "lon": 77.3141705
+    },
+    {
+      "ward_id": "DELHI_182",
+      "name": "Meethapur",
+      "zone": "Central Zone",
+      "lat": 28.4908096,
+      "lon": 77.3253879
+    },
+    {
+      "ward_id": "DELHI_183",
+      "name": "Hari Nagar Extension",
+      "zone": "Central Zone"
+    },
+    {
+      "ward_id": "DELHI_184",
+      "name": "Jaitpur",
+      "zone": "Central Zone",
+      "lat": 28.5004267,
+      "lon": 77.3155107
+    },
+    {
+      "ward_id": "DELHI_185",
+      "name": "Madanpur Khadar East",
+      "zone": "Central Zone",
+      "lat": 28.53493,
+      "lon": 77.3005184
+    },
+    {
+      "ward_id": "DELHI_186",
+      "name": "Madanpur Khadar West",
+      "zone": "Central Zone"
+    },
+    {
+      "ward_id": "DELHI_187",
+      "name": "Sarita Vihar",
+      "zone": "Central Zone",
+      "lat": 28.5334785,
+      "lon": 77.2935232
+    },
+    {
+      "ward_id": "DELHI_188",
+      "name": "Abul Fazal Enclave",
+      "zone": "Central Zone",
+      "lat": 28.6019678,
+      "lon": 77.3213455
+    },
+    {
+      "ward_id": "DELHI_189",
+      "name": "Zakir Nagar",
+      "zone": "Central Zone",
+      "lat": 28.5673956,
+      "lon": 77.2806319
+    },
+    {
+      "ward_id": "DELHI_148",
+      "name": "Hauz Khas",
+      "zone": "South Zone",
+      "lat": 28.5498087,
+      "lon": 77.2077638
+    },
+    {
+      "ward_id": "DELHI_149",
+      "name": "Malviya Nagar",
+      "zone": "South Zone",
+      "lat": 28.5339201,
+      "lon": 77.2124474
+    },
+    {
+      "ward_id": "DELHI_150",
+      "name": "Green Park",
+      "zone": "South Zone",
+      "lat": 28.5564421,
+      "lon": 77.2038699
+    },
+    {
+      "ward_id": "DELHI_151",
+      "name": "Munirka",
+      "zone": "South Zone",
+      "lat": 28.554886,
+      "lon": 77.1710841
+    },
+    {
+      "ward_id": "DELHI_152",
+      "name": "R.K. Puram",
+      "zone": "South Zone",
+      "lat": 28.5503805,
+      "lon": 77.1855231
+    },
+    {
+      "ward_id": "DELHI_153",
+      "name": "Vasant Vihar",
+      "zone": "South Zone",
+      "lat": 28.557827,
+      "lon": 77.1611168
+    },
+    {
+      "ward_id": "DELHI_154",
+      "name": "Lado Sarai",
+      "zone": "South Zone",
+      "lat": 28.5254347,
+      "lon": 77.1920657
+    },
+    {
+      "ward_id": "DELHI_155",
+      "name": "Mehrauli",
+      "zone": "South Zone",
+      "lat": 28.5218262,
+      "lon": 77.1783232
+    },
+    {
+      "ward_id": "DELHI_156",
+      "name": "Vasant Kunj",
+      "zone": "South Zone",
+      "lat": 28.5292495,
+      "lon": 77.1541335
+    },
+    {
+      "ward_id": "DELHI_157",
+      "name": "Aya Nagar",
+      "zone": "South Zone",
+      "lat": 28.476491,
+      "lon": 77.1329132
+    },
+    {
+      "ward_id": "DELHI_158",
+      "name": "Bhati",
+      "zone": "South Zone",
+      "lat": 28.4270142,
+      "lon": 77.1905625
+    },
+    {
+      "ward_id": "DELHI_159",
+      "name": "Chhatarpur",
+      "zone": "South Zone",
+      "lat": 28.5067242,
+      "lon": 77.1750019
+    },
+    {
+      "ward_id": "DELHI_160",
+      "name": "Said-Ul-Ajaib",
+      "zone": "South Zone",
+      "lat": 28.5173369,
+      "lon": 77.2025984
+    },
+    {
+      "ward_id": "DELHI_161",
+      "name": "Deoli",
+      "zone": "South Zone",
+      "lat": 28.505296,
+      "lon": 77.229277
+    },
+    {
+      "ward_id": "DELHI_162",
+      "name": "Tigri",
+      "zone": "South Zone",
+      "lat": 28.5117193,
+      "lon": 77.240937
+    },
+    {
+      "ward_id": "DELHI_163",
+      "name": "Sangam Vihar-A",
+      "zone": "South Zone",
+      "lat": 28.5057128,
+      "lon": 77.2484672
+    },
+    {
+      "ward_id": "DELHI_164",
+      "name": "Dakshin Puri",
+      "zone": "South Zone"
+    },
+    {
+      "ward_id": "DELHI_165",
+      "name": "Madangir",
+      "zone": "South Zone",
+      "lat": 28.5209605,
+      "lon": 77.2319455
+    },
+    {
+      "ward_id": "DELHI_166",
+      "name": "Pushp Vihar",
+      "zone": "South Zone",
+      "lat": 28.522712,
+      "lon": 77.2230873
+    },
+    {
+      "ward_id": "DELHI_167",
+      "name": "Khanpur",
+      "zone": "South Zone",
+      "lat": 28.5127982,
+      "lon": 77.2323949
+    },
+    {
+      "ward_id": "DELHI_171",
+      "name": "Chitaranjan Park",
+      "zone": "South Zone"
+    },
+    {
+      "ward_id": "DELHI_172",
+      "name": "Chirag Delhi",
+      "zone": "South Zone",
+      "lat": 28.5381411,
+      "lon": 77.2280694
+    },
+    {
+      "ward_id": "DELHI_173",
+      "name": "Greater Kailash",
+      "zone": "South Zone",
+      "lat": 28.5419077,
+      "lon": 77.2384925
+    },
+    {
+      "ward_id": "DELHI_190",
+      "name": "New Ashok Nagar",
+      "zone": "Shahdara South Zone",
+      "lat": 28.5890885,
+      "lon": 77.3015085
+    },
+    {
+      "ward_id": "DELHI_191",
+      "name": "Mayur Vihar Phase-I",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6037211,
+      "lon": 77.2879277
+    },
+    {
+      "ward_id": "DELHI_192",
+      "name": "Trilokpuri",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6056473,
+      "lon": 77.3066482
+    },
+    {
+      "ward_id": "DELHI_193",
+      "name": "Kondli",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6070816,
+      "lon": 77.3243319
+    },
+    {
+      "ward_id": "DELHI_194",
+      "name": "Gharoli",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6165864,
+      "lon": 77.3319912
+    },
+    {
+      "ward_id": "DELHI_195",
+      "name": "Kalyanpuri",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6194913,
+      "lon": 77.3179579
+    },
+    {
+      "ward_id": "DELHI_196",
+      "name": "Mayur Vihar Phase-Ii",
+      "zone": "Shahdara South Zone",
+      "lat": 28.619631,
+      "lon": 77.3012288
+    },
+    {
+      "ward_id": "DELHI_197",
+      "name": "Patpar Ganj",
+      "zone": "Shahdara South Zone"
+    },
+    {
+      "ward_id": "DELHI_198",
+      "name": "Vinod Nagar",
+      "zone": "Shahdara South Zone",
+      "lat": 28.623803,
+      "lon": 77.2983777
+    },
+    {
+      "ward_id": "DELHI_199",
+      "name": "Mandawali",
+      "zone": "Shahdara South Zone",
+      "lat": 28.628772,
+      "lon": 77.2939554
+    },
+    {
+      "ward_id": "DELHI_200",
+      "name": "Pandav Nagar",
+      "zone": "Shahdara South Zone",
+      "lat": 28.619553,
+      "lon": 77.2830355
+    },
+    {
+      "ward_id": "DELHI_201",
+      "name": "Lalita Park",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6321536,
+      "lon": 77.2716477
+    },
+    {
+      "ward_id": "DELHI_202",
+      "name": "Shakarpur",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6294888,
+      "lon": 77.2810607
+    },
+    {
+      "ward_id": "DELHI_203",
+      "name": "Laxmi Nagar",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6305974,
+      "lon": 77.277523
+    },
+    {
+      "ward_id": "DELHI_204",
+      "name": "Preet Vihar",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6414409,
+      "lon": 77.2952594
+    },
+    {
+      "ward_id": "DELHI_205",
+      "name": "I.P. Extension",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6315581,
+      "lon": 77.3144956
+    },
+    {
+      "ward_id": "DELHI_206",
+      "name": "Anand Vihar",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6468919,
+      "lon": 77.316053
+    },
+    {
+      "ward_id": "DELHI_207",
+      "name": "Vishwas Nagar",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6644701,
+      "lon": 77.2917414
+    },
+    {
+      "ward_id": "DELHI_208",
+      "name": "Anarkali",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6451395,
+      "lon": 77.2822449
+    },
+    {
+      "ward_id": "DELHI_209",
+      "name": "Jagat Puri",
+      "zone": "Shahdara South Zone"
+    },
+    {
+      "ward_id": "DELHI_210",
+      "name": "Geeta Colony",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6510892,
+      "lon": 77.2749996
+    },
+    {
+      "ward_id": "DELHI_211",
+      "name": "Krishna Nagar",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6578127,
+      "lon": 77.2901199
+    },
+    {
+      "ward_id": "DELHI_212",
+      "name": "Gandhi Nagar",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6587904,
+      "lon": 77.2715878
+    },
+    {
+      "ward_id": "DELHI_213",
+      "name": "Shastri Park",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6684339,
+      "lon": 77.2505301
+    },
+    {
+      "ward_id": "DELHI_214",
+      "name": "Azad Nagar",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6626821,
+      "lon": 77.2795153
+    },
+    {
+      "ward_id": "DELHI_215",
+      "name": "Shahdara",
+      "zone": "Shahdara South Zone",
+      "lat": 28.6758661,
+      "lon": 77.2985078
+    },
+    {
+      "ward_id": "DELHI_216",
+      "name": "Jhilmil",
+      "zone": "Shahdara North Zone",
+      "lat": 28.6757197,
+      "lon": 77.3123949
+    },
+    {
+      "ward_id": "DELHI_217",
+      "name": "Dilshad Colony",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_218",
+      "name": "Sundar Nagri",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_219",
+      "name": "Dilshad Garden",
+      "zone": "Shahdara North Zone",
+      "lat": 28.6758864,
+      "lon": 77.321446
+    },
+    {
+      "ward_id": "DELHI_220",
+      "name": "Nand Nagri",
+      "zone": "Shahdara North Zone",
+      "lat": 28.697809,
+      "lon": 77.3057011
+    },
+    {
+      "ward_id": "DELHI_221",
+      "name": "Ashok Nagar",
+      "zone": "Shahdara North Zone",
+      "lat": 28.6360207,
+      "lon": 77.101822
+    },
+    {
+      "ward_id": "DELHI_222",
+      "name": "Ram Nagar East",
+      "zone": "Shahdara North Zone",
+      "lat": 28.6223601,
+      "lon": 77.2933747
+    },
+    {
+      "ward_id": "DELHI_223",
+      "name": "Rohtash Nagar",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_224",
+      "name": "Welcome Colony",
+      "zone": "Shahdara North Zone",
+      "lat": 28.6719045,
+      "lon": 77.2751156
+    },
+    {
+      "ward_id": "DELHI_225",
+      "name": "Seelampur",
+      "zone": "Shahdara North Zone",
+      "lat": 28.6698165,
+      "lon": 77.2668137
+    },
+    {
+      "ward_id": "DELHI_226",
+      "name": "Gautam Puri",
+      "zone": "Shahdara North Zone",
+      "lat": 28.5112867,
+      "lon": 77.3016937
+    },
+    {
+      "ward_id": "DELHI_227",
+      "name": "Chauhan Banger",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_228",
+      "name": "Maujpur",
+      "zone": "Shahdara North Zone",
+      "lat": 28.6920781,
+      "lon": 77.2796973
+    },
+    {
+      "ward_id": "DELHI_229",
+      "name": "Braham Puri",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_230",
+      "name": "Bhajanpura",
+      "zone": "Shahdara North Zone",
+      "lat": 28.7009399,
+      "lon": 77.2617817
+    },
+    {
+      "ward_id": "DELHI_231",
+      "name": "Ghonda",
+      "zone": "Shahdara North Zone",
+      "lat": 28.695924,
+      "lon": 77.2657137
+    },
+    {
+      "ward_id": "DELHI_232",
+      "name": "Yamuna Vihar",
+      "zone": "Shahdara North Zone",
+      "lat": 28.700372,
+      "lon": 77.2727728
+    },
+    {
+      "ward_id": "DELHI_233",
+      "name": "Subhash Mohalla",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_234",
+      "name": "Kabir Nagar",
+      "zone": "Shahdara North Zone",
+      "lat": 28.6926703,
+      "lon": 77.2835443
+    },
+    {
+      "ward_id": "DELHI_235",
+      "name": "Gorakh Park",
+      "zone": "Shahdara North Zone",
+      "lat": 28.6840771,
+      "lon": 77.2828225
+    },
+    {
+      "ward_id": "DELHI_236",
+      "name": "Kardam Puri",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_237",
+      "name": "Harsh Vihar",
+      "zone": "Shahdara North Zone",
+      "lat": 28.6350898,
+      "lon": 77.0326678
+    },
+    {
+      "ward_id": "DELHI_238",
+      "name": "Saboli",
+      "zone": "Shahdara North Zone",
+      "lat": 28.7036208,
+      "lon": 77.3018128
+    },
+    {
+      "ward_id": "DELHI_239",
+      "name": "Gokal Puri",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_240",
+      "name": "Joharipur",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_241",
+      "name": "Karawal Nagar-East",
+      "zone": "Shahdara North Zone",
+      "lat": 28.7172505,
+      "lon": 77.2869559
+    },
+    {
+      "ward_id": "DELHI_242",
+      "name": "Dayalpur",
+      "zone": "Shahdara North Zone",
+      "lat": 28.7046779,
+      "lon": 77.2643349
+    },
+    {
+      "ward_id": "DELHI_243",
+      "name": "Mustafabad",
+      "zone": "Shahdara North Zone",
+      "lat": 28.7485371,
+      "lon": 77.2927766
+    },
+    {
+      "ward_id": "DELHI_244",
+      "name": "Nehru Vihar",
+      "zone": "Shahdara North Zone",
+      "lat": 28.7107447,
+      "lon": 77.2211744
+    },
+    {
+      "ward_id": "DELHI_245",
+      "name": "Brij Puri",
+      "zone": "Shahdara North Zone",
+      "lat": 28.7025095,
+      "lon": 77.2737771
+    },
+    {
+      "ward_id": "DELHI_246",
+      "name": "Sri Ram Colony",
+      "zone": "Shahdara North Zone",
+      "lat": 28.5594356,
+      "lon": 77.237563
+    },
+    {
+      "ward_id": "DELHI_247",
+      "name": "Sadatpur",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_248",
+      "name": "Karawal Nagar-West",
+      "zone": "Shahdara North Zone"
+    },
+    {
+      "ward_id": "DELHI_249",
+      "name": "Sonia Vihar",
+      "zone": "Shahdara North Zone",
+      "lat": 28.7199257,
+      "lon": 77.2481823
+    },
+    {
+      "ward_id": "DELHI_250",
+      "name": "Sabapur",
+      "zone": "Shahdara North Zone"
+    }
+  ]

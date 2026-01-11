@@ -4,6 +4,13 @@ import express from 'express';
 import cors from 'cors';
 import pollutionRoutes from './routes/pollution.js';
 import complaintRoutes from './routes/complaint.js';
+import dotenv from "dotenv";
+import attributionRoutes from "./routes/attributionRoutes.js";
+import { connectDB } from "./config/db.js";
+import { startSchedulers } from "./services/schedulerService.js";
+import notificationRoutes from "./routes/notificationRoutes.js";
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -16,6 +23,8 @@ if (!mongoUri) {
   console.error('MongoDB connection error: MONGO_URI is not set in environment');
   process.exit(1);
 }
+connectDB();
+startSchedulers();
 
 mongoose
   .connect(mongoUri)
@@ -30,6 +39,10 @@ mongoose
 // Routes
 app.use('/api', pollutionRoutes);
 app.use('/api', complaintRoutes);
+app.use("/api/attribution", attributionRoutes);
+
+app.use("/api/notifications", notificationRoutes);
+
 
 // Test route
 app.get('/', (req, res) => {
