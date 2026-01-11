@@ -12,6 +12,9 @@ import Alerts from "./pages/Alerts";
 import NotFound from "./pages/NotFound";
 import Map from "./pages/Map";
 import WardMap from "./pages/WardMap";
+import { ChatBot } from "./components/chatbot/ChatBot";
+import { useLocation } from "react-router-dom";
+
 
 // Admin imports
 import { AdminFloatingButton } from "./components/admin/AdminFloatingButton";
@@ -22,14 +25,43 @@ import AdminComplaints from "./pages/admin/AdminComplaints";
 
 const queryClient = new QueryClient();
 
+function ChatBotWrapper() {
+  const location = useLocation();
+
+  // Show chatbot only on ward-related pages
+  if (!location.pathname.startsWith("/ward")) {
+    return null;
+  }
+
+  // Expect ward data to be passed via navigation state
+  const state = location.state as {
+    wardId?: string;
+    wardName?: string;
+    aqi?: number;
+    status?: string;
+  };
+
+  // Fail-safe defaults (prevents crashes during hackathon demos)
+  return (
+    <ChatBot
+      wardId={state?.wardId ?? "unknown"}
+      wardName={state?.wardName ?? "Unknown Ward"}
+      aqi={state?.aqi ?? 0}
+      status={state?.status ?? "Unknown"}
+    />
+  );
+}
+
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
+      <ChatBotWrapper />
         {/* Floating Admin Button - visible on all non-admin pages */}
-        <AdminFloatingButton />
+        {/* <AdminFloatingButton /> */}
         
         <Routes>
           {/* Public Routes */}

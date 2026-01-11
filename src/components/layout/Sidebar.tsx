@@ -17,6 +17,7 @@ import {
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Shield } from "lucide-react";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
@@ -95,11 +96,17 @@ export function Sidebar() {
 
         {/* Footer */}
         <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-sidebar-border">
-          <div className="flex items-center gap-3 px-4 py-3 rounded-lg bg-sidebar-accent/50">
-            <div className="w-2 h-2 rounded-full bg-success animate-pulse" />
-            <span className="text-sm text-sidebar-foreground/80">System Online</span>
-          </div>
-        </div>
+  <NavLink
+    to="/admin"
+    className="flex items-center gap-3 px-4 py-3 rounded-lg bg-sidebar-accent/50 hover:bg-sidebar-accent transition-colors"
+  >
+    <Shield className="h-4 w-4 text-sidebar-foreground" />
+    <span className="text-sm font-medium text-sidebar-foreground">
+      Login as Admin
+    </span>
+  </NavLink>
+</div>
+
       </aside>
     </>
   );
