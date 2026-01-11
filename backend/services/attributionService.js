@@ -4,6 +4,8 @@ import { fetchDelhiStations, fetchStationDetails } from "./aqicnService.js";
 import { haversineDistance } from "../utils/math.js";
 import { generateExplanation } from "./explanationService.js";
 import { getConfidenceScore } from "./confidenceService.js";
+import { generateStructuredRecommendations } from "./recommendationEngine.js";
+
 
 
 import { fileURLToPath } from "url";
@@ -85,6 +87,8 @@ function generateRecommendation(aqi, zone) {
   return recommendation;
 }
 
+  
+
 /* -------------------- Main Attribution Function -------------------- */
 
 export async function attributeSources({ ward_id }) {
@@ -109,6 +113,7 @@ export async function attributeSources({ ward_id }) {
   const stationDetails = await fetchStationDetails(nearestStation.station_id);
 
   const aqi = Number(stationDetails.aqi);
+  
   const category = getAQICategory(aqi);
 
   const pollutants = extractPollutants(stationDetails.pollutants);
@@ -142,6 +147,13 @@ export async function attributeSources({ ward_id }) {
     recommendation +=
       ", and high humidity may be increasing particulate persistence";
   }
+  const structuredRecommendations = generateStructuredRecommendations({
+    aqi,
+    dominant_pollutant: stationDetails.dominant_pollutant,
+    zone: ward.zone,
+    weather: stationDetails.weather
+  });
+  
 
   /* -------------------- EXPLANATION -------------------- */
 
@@ -178,6 +190,7 @@ export async function attributeSources({ ward_id }) {
     weather: stationDetails.weather,
     precautions: explanation,
     recommendation,
+    recommendations: structuredRecommendations,
     priority,
     confidence,
     station_name: stationDetails.station_name,

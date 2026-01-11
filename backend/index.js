@@ -43,6 +43,11 @@ app.use("/api/attribution", attributionRoutes);
 
 app.use("/api/notifications", notificationRoutes);
 
+import recommendationRoutes from "./routes/recommendationRoutes.js";
+
+app.use("/recommendations", recommendationRoutes);
+
+
 
 // Test route
 app.get('/', (req, res) => {
