@@ -26,6 +26,37 @@ interface Recommendation {
   status?: "pending" | "in-progress" | "completed";
 }
 
+interface WardRecommendation {
+  ward: string;
+  aqi: number;
+  aqi_category: string;
+  dominant_pollutant: string;
+
+  pollutants: {
+    pm25: number;
+    pm10: number;
+    no2: number;
+    so2: number;
+    co: number;
+    o3: number;
+  };
+
+  weather: {
+    temperature: number;
+    humidity: number;
+    pressure: number;
+    wind_speed: number;
+  };
+
+  recommendation: string;
+  precautions: string;
+  confidence: number;
+
+  station_name: string;
+  station_distance_km: number;
+  last_updated: string;
+}
+
 const shortTerm: Recommendation[] = [
   {
     id: "s1",
@@ -118,6 +149,38 @@ const longTerm: Recommendation[] = [
   },
 ];
 
+const MOCK_WARD_RESPONSE: WardRecommendation = {
+  ward: "Narela",
+  aqi: 201,
+  aqi_category: "Very Poor",
+  dominant_pollutant: "PM2.5",
+
+  pollutants: {
+    pm25: 201,
+    pm10: 131,
+    no2: 10.3,
+    so2: 1.4,
+    co: 3.3,
+    o3: 15.5,
+  },
+
+  weather: {
+    temperature: 15.9,
+    humidity: 46.2,
+    pressure: 950,
+    wind_speed: 1.24,
+  },
+
+  recommendation: "Reduce vehicular and industrial emissions immediately",
+  precautions:
+    "Air quality is currently classified as Very Poor. Residents are advised to avoid outdoor activities, wear N95 masks when outdoors, and keep windows closed.",
+
+  confidence: 0.77,
+  station_name: "Narela, Delhi, Delhi, India",
+  station_distance_km: 3.24,
+  last_updated: "2026-01-10T13:00:00+05:30",
+};
+
 const priorityColors = {
   high: "aqiSevere",
   medium: "warning",
@@ -206,6 +269,188 @@ function CategorySection({
   );
 }
 
+import { useState } from "react";
+
+function WardRecommendationSection() {
+  const [ward, setWard] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState<WardRecommendation | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleGenerate = async () => {
+    if (!ward) return;
+
+    setLoading(true);
+    setData(null);
+
+    // fake delay (UI only)
+    // setTimeout(() => {
+    //   setData(MOCK_WARD_RESPONSE);
+    //   setLoading(false);
+    // }, 1200);
+
+    setError(null);
+
+    try {
+      const res = await fetch(
+        `http://localhost:8000/recommendations?ward=${encodeURIComponent(ward)}`
+      );
+
+      if (!res.ok) {
+        throw new Error("Invalid ward or server error");
+      }
+
+      const json: WardRecommendation = await res.json();
+      setData(json);
+    } catch (err) {
+      setError("Unable to fetch recommendations for this ward.");
+    } finally {
+      setLoading(false);
+    }
+
+  };
+
+  return (
+    <div className="bg-card rounded-xl border border-border p-6 shadow-card animate-fade-in">
+      <div className="space-y-1 mb-4">
+        <h2 className="text-xl font-semibold">Ward-based Recommendations</h2>
+        <p className="text-sm text-muted-foreground">
+          Generate recommendations by entering a ward number or name
+        </p>
+      </div>
+
+      {/* Input */}
+      <div className="flex flex-col md:flex-row gap-4 mb-6">
+        <input
+          value={ward}
+          onChange={(e) => setWard(e.target.value)}
+          placeholder="Enter ward number or name"
+          className="flex-1 rounded-lg border border-border px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+
+        <Button onClick={handleGenerate} disabled={loading}>
+          {loading ? "Generating..." : "Give Recommendations"}
+        </Button>
+      </div>
+
+      {/* Error Message */}
+      {error && (
+        <p className="text-sm text-destructive mt-2">
+          {error}
+        </p>
+      )}
+
+      {/* Loading Skeleton */}
+      {loading && (
+        <div className="space-y-3 animate-pulse">
+          <div className="h-4 w-1/3 bg-muted rounded" />
+          <div className="h-4 w-2/3 bg-muted rounded" />
+          <div className="h-24 bg-muted rounded" />
+        </div>
+      )}
+
+      {/* Output */}
+      {data && (
+        <div className="space-y-6">
+          {/* Header */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h3 className="text-2xl font-bold">{data.ward} Ward</h3>
+              <p className="text-sm text-muted-foreground">
+                Data sourced from {data.station_name} (
+                {data.station_distance_km} km away)
+              </p>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <Badge variant="aqiSevere" className="text-sm">
+                {data.aqi_category}
+              </Badge>
+              <span className="text-4xl font-bold">{data.aqi}</span>
+            </div>
+          </div>
+
+          {/* Key Metrics */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Metric label="Dominant Pollutant" value={data.dominant_pollutant} />
+            <Metric label="Confidence" value={`${Math.round(data.confidence * 100)}%`} />
+            <Metric
+              label="Temperature"
+              value={`${data.weather.temperature} °C`}
+            />
+            <Metric
+              label="Wind Speed"
+              value={`${data.weather.wind_speed} m/s`}
+            />
+          </div>
+
+          {/* Pollutants */}
+          <div>
+            <h4 className="font-semibold mb-2">Pollutant Concentrations</h4>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
+              <Pollutant label="PM2.5" value={data.pollutants.pm25} />
+              <Pollutant label="PM10" value={data.pollutants.pm10} />
+              <Pollutant label="NO₂" value={data.pollutants.no2} />
+              <Pollutant label="SO₂" value={data.pollutants.so2} />
+              <Pollutant label="CO" value={data.pollutants.co} />
+              <Pollutant label="O₃" value={data.pollutants.o3} />
+            </div>
+          </div>
+
+          {/* Recommendation */}
+          <div className="bg-warning/10 border border-warning/20 rounded-xl p-5">
+            <h4 className="font-semibold mb-1">Recommended Action</h4>
+            <p className="text-sm text-muted-foreground">
+              {data.recommendation}
+            </p>
+          </div>
+
+          {/* Precautions */}
+          <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-5">
+            <h4 className="font-semibold mb-1">Health Precautions</h4>
+            <p className="text-sm text-muted-foreground">
+              {data.precautions}
+            </p>
+          </div>
+
+          {/* Footer */}
+          <p className="text-xs text-muted-foreground text-right">
+            Last updated: {new Date(data.last_updated).toLocaleString()}
+          </p>
+        </div>
+      )}
+
+    </div>
+  );
+}
+
+function Info({ label, value }: { label: string; value: string }) {
+  return (
+    <div>
+      <p className="text-muted-foreground">{label}</p>
+      <p className="font-medium">{value}</p>
+    </div>
+  );
+}
+
+function Metric({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="bg-muted/50 rounded-lg p-4">
+      <p className="text-xs text-muted-foreground">{label}</p>
+      <p className="text-lg font-semibold">{value}</p>
+    </div>
+  );
+}
+
+function Pollutant({ label, value }: { label: string; value: number }) {
+  return (
+    <div className="bg-card border border-border rounded-lg p-3 text-center">
+      <p className="text-xs text-muted-foreground">{label}</p>
+      <p className="font-semibold">{value}</p>
+    </div>
+  );
+}
+
 export default function Recommendations() {
   return (
     <DashboardLayout>
@@ -236,6 +481,11 @@ export default function Recommendations() {
             <p className="text-sm text-muted-foreground">In Progress</p>
             <p className="text-3xl font-bold text-info">1</p>
           </div>
+        </div>
+
+        {/* Ward Recommendation Generator */}
+        <div className="animate-fade-in" style={{ animationDelay: "0.15s" }}>
+          <WardRecommendationSection />
         </div>
 
         {/* Short Term */}
