@@ -2,6 +2,7 @@ import { useState } from "react";
 import { DashboardLayout } from "@/components/layout/DashboardLayout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import {
   Select,
   SelectContent,
@@ -238,16 +239,12 @@ export default function CitizenPortal() {
               </div>
 
               <Button asChild variant="default" size="sm" className="whitespace-nowrap">
-                <a
-                  href="https://nmba.dosje.gov.in/content/take-a-pledge"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <CheckCircle className="h-4 w-4" />
-                  Pledge Now
-                </a>
-              </Button>
+  <Link to="/takeapledge" className="flex items-center gap-2">
+    <CheckCircle className="h-4 w-4" />
+    Pledge Now
+  </Link>
+</Button>
+
             </div>
           </div>
         </div>

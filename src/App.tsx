@@ -14,6 +14,7 @@ import Map from "./pages/Map";
 import WardMap from "./pages/WardMap";
 import { ChatBot } from "./components/chatbot/ChatBot";
 import { useLocation } from "react-router-dom";
+import TakeAPledge from "./pages/TakeAPledge";
 
 
 // Admin imports
@@ -73,6 +74,8 @@ const App = () => (
           <Route path="/alerts" element={<Alerts />} />
           <Route path="/maps" element={<Map />} />
           <Route path="/ward-map" element={<WardMap />} />
+          <Route path="/takeapledge" element={<TakeAPledge />} />
+
           
           {/* Admin Routes - Protected */}
           <Route path="/admin" element={<AdminAuthGuard><AdminIndex /></AdminAuthGuard>} />
