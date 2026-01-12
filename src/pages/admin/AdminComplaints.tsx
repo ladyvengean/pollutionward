@@ -126,7 +126,7 @@ export default function AdminComplaints() {
     let mounted = true;
     const fetchComplaints = async () => {
       try {
-        const res = await fetch("http://localhost:5001/api/complaints");
+        const res = await fetch("http://localhost:8000/api/complaints");
         const body = await res.json();
         if (!res.ok) throw new Error(body.message || "Failed to fetch");
         const mapped: AdminComplaint[] = body.data.map((c: any) => ({
