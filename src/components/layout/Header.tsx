@@ -24,8 +24,8 @@ interface UserData {
 
 // Mock data - in a real app, this would come from auth context
 const userData: UserData = {
-  name: "Rajesh Kumar",
-  email: "rajesh.kumar@email.com",
+  name: "Shruti Pandey",
+  email: "shruti@gmail.com",
   wardName: "Central Ward",
   memberSince: "March 2024",
   credits: {

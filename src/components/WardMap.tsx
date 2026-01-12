@@ -54,7 +54,7 @@ const WardMap = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:5001/api/pollution?lat=${lat}&lon=${lon}`
+        `http://localhost:8000/api/pollution?lat=${lat}&lon=${lon}`
       );
 
       if (!res.ok) {
