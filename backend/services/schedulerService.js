@@ -105,7 +105,7 @@ function startDailyAggregation() {
 
 
 function startDailySummaryNotification() {
-  cron.schedule("0 8 * * *", async () => {
+  cron.schedule("* * * * *", async () => {
     console.log("[Scheduler] Daily Summary Check");
 
     if (!notificationSettings.dailySummary) {

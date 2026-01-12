@@ -187,7 +187,7 @@ export default function CitizenPortal() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5001/api/complaints", {
+      const res = await fetch("http://localhost:8000/api/complaints", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
